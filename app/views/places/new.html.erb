@@ -1,8 +1,9 @@
 <h1>Create a New Place!</h1>
 
-<%= form_with model: @places do |form| %>
+<%= form_with model: @place do |form| %>
     <p>
-    <%= form.text_field "name", "Location Name" %>
+    <%= form.label "name", "Name of Place" %>
+    <%= form.text_field "name" %>
     <%= form.submit %>
     </p>
 <% end %>
