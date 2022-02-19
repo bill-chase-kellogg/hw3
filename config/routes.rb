@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+# root 'places#index'
+resources :places
+resources :posts
+
+end
+
+ # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
-
-root 'places#index'
-resources: places
-resources: posts
-
-end
 
 
