@@ -1,12 +1,13 @@
-<h1><%= @place.name %>
+<h1><%= @place.name %></h1>
 
 <h2>Posts</h2>
 <ul>
 <% for posts in @place.posts %>
     <li>
-        <h3><%= @posts.title %></h3>
-        <h5><%= @posts.posted_on %></h5>
-        <h4><%= @posts.description%></h4>        
+        <p><h2><%= posts.title %><h2></p>
+        <p><h4><%= posts.posted_on %></h4></p>
+        <p><h3><%= posts.description%></h3></p>   
+        <p>----------------------------------------</p>
     </li>
 <% end %>
 </ul>

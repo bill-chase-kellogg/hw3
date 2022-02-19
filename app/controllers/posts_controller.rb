@@ -1,23 +1,23 @@
 class PostsController < ApplicationController
 
-    # def index
-    #     @posts = Post.all
-    # end
+    def index
+      redirect_to "/places/"
+    end
 
-    # def show
-    #     # .find(123) is the same as .where({ id: 123 })[0]
-    #     @place = Place.find(params["id"])
-    # end
+    def show
+      redirect_to "/places/"
+    end
 
     def new
         @post = Post.new
         @post.place_id = params["place_id"]
-      end
+    end
     
-      def create
+    def create
         @post = Post.new(params["post"])
         @post.save
         redirect_to "/places/#{@post.place_id}"
-      end
+
+    end
 
 end
