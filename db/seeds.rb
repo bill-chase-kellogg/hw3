@@ -13,7 +13,7 @@ Post.create(title: "Started Traveling Every Week", description: "The engagement 
 costarica = Place.create(name: "Costa Rica")
 Post.create(title: "First Surf Trip", description: "Went to Tamarindo and surfed Witches Rock and Playa Grande", posted_on: "2011-07-01", place_id: costarica.id)
 Post.create(title: "Second Surf Trip", description: "Went back to Tamarindo but also added Langosta this time", posted_on: "2013-03-05", place_id: costarica.id)
-Post.create(title: "Full Country Trip" description: "Went to Arenal and visited the hot springs with my wife. Then we went Tamarindo and hung out and did a little surfing.", posted_on: "2020-03-13", place_id: costarica.id)
+Post.create(title: "Full Country Trip", description: "Went to Arenal and visited the hot springs with my wife. Then we went Tamarindo and hung out and did a little surfing.", posted_on: "2020-03-13", place_id: costarica.id)
 
 nyc = Place.create(name: "NYC")
 Post.create(title: "Moved to NYC", description: "Finally made my wife's wish come true :-P", posted_on: "2021-08-09", place_id: nyc.id)
