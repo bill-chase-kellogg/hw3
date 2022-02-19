@@ -1,0 +1,8 @@
+<h1>Create a New Place!</h1>
+
+<%= form_with model: @places do |form| %>
+    <p>
+    <%= form.text_field "name", " Name" %>
+    <%= form.submit %>
+    </p>
+<% end %>
